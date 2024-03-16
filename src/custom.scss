@@ -1,0 +1,23 @@
+@import './scss/mdb.free.scss';
+@import './scss/free/variables';
+
+$myprimary: #DA2121;
+
+.heroFont {
+    font-size: 68px;
+}
+
+@include media-breakpoint-up(lg) {
+    .heroFont {
+        font-size: 90px;
+    }
+}
+
+$rounded: 3px;
+
+$utilities: (
+    "rounded": (
+        property: border-radius,
+        values: "3px"
+    )
+)
