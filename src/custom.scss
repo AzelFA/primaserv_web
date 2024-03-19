@@ -3,13 +3,28 @@
 
 $myprimary: #DA2121;
 
+html {
+    height: 100%;
+    overflow-x: hidden;
+  }
+
 .heroFont {
     font-size: 68px;
+}
+
+.iginv {
+    visibility: hidden;
+    display: none;
 }
 
 @include media-breakpoint-up(lg) {
     .heroFont {
         font-size: 90px;
+    }
+
+    .iginv {
+        visibility: visible;
+        display: inherit;
     }
 }
 

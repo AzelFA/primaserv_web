@@ -1,4 +1,11 @@
 nav {
     background-color: #DA2121;
-    height: 80px;
+    height: 95px;
+}
+
+
+@media only screen and (min-width: 992px){
+    nav{
+        height: 80px;
+    }
 }

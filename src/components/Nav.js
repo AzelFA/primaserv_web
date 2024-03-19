@@ -7,10 +7,8 @@ import {
   MDBNavbarItem,
   MDBNavbarLink,
   MDBCollapse,
-  MDBBtn,
   MDBNavbarNav,
   MDBIcon,
-  MDBInputGroup
 } from 'mdb-react-ui-kit';
 import Logo from '../Logo.png'
 
@@ -19,8 +17,8 @@ function Nav(){
 
   return (
     <>
-      <MDBNavbar expand='lg' light bgColor='myprimary'>
-        <MDBContainer fluid>
+      <MDBNavbar expand='lg' light bgColor='myprimary' className=''>
+        <MDBContainer fluid className='p-0 mx-lg-5 mx-3'>
           <MDBNavbarToggler
             type='button'
             data-target='#navbarTogglerDemo03'
@@ -33,7 +31,7 @@ function Nav(){
           </MDBNavbarToggler>
           
           <MDBCollapse navbar open={openNavNoTogglerThird}>
-            <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
+            <MDBNavbarNav className='mr-auto mb-0 mb-lg-0'>
               <MDBNavbarItem>
                 <MDBNavbarLink aria-current='page' href='#' className='text-white'>
                   Explore
@@ -49,12 +47,13 @@ function Nav(){
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>
-          <MDBNavbarBrand href='#'>
+          <MDBNavbarBrand href='#' className='ml-auto mr-auto justify-content-center'>
             <img
               src={Logo}
-              height='40'
+              height='50'
               alt='Brand Logo'
               loading='lazy'
+              className='img-fluid'
             />
           </MDBNavbarBrand>
             <MDBNavbarLink className='pr-3' href='https://instagram.com'>
