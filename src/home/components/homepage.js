@@ -19,7 +19,7 @@ function HomePage(){
                     <div className='p-lg-5 p-3 m-0'>
                         <MDBRow className='align-items-center justify-content-between'>
                             <MDBCol lg='6'>
-                            <h1 className='text-white heroFont' style={{width:'250px'}}>PRIMA SERVITAMA</h1>
+                            <h1 className='text-white homeFont' style={{width:'250px'}}>PRIMA SERVITAMA</h1>
                             <h4 className='text-white iginv' style={{fontWeight:'300'}}>We serve you the best</h4>
                             <a href='https://instagram.com' className='py-2 iginv'>
                                 <MDBIcon fab icon="instagram" size='3x' color='light' />

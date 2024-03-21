@@ -9,7 +9,11 @@ html {
   }
 
 .heroFont {
-    font-size: 68px;
+    font-size: 46px !important;
+}
+
+.homeFont {
+    font-size: 62px !important;
 }
 
 .iginv {
@@ -18,15 +22,16 @@ html {
 }
 
 .heroBg {
-    height: 50vh;
+    height: 85% !important;
 }
 
 .devAlign{
     text-align: center;
+    font-size: 16px;
 }
 
 .titleBawah{
-    font-size: 54px;
+    font-size: 48px;
     font-weight: 600;
     color:#DA2121;
     text-align: center;
@@ -36,12 +41,28 @@ html {
     border: 4px solid $myprimary !important;
     margin-top: 1rem !important;
     width: 450px !important;
+    height: max-content;
   }
 
+.devText{
+    font-size: 18px;
+}
 
 @include media-breakpoint-up(lg) {
+    .borderRed{
+        height: 466px;
+      }
+
+      .devText{
+        font-size: 24px;
+    }
+
     .heroFont {
-        font-size: 90px;
+        font-size: 90px !important;
+    }
+
+    .homeFont {
+        font-size: 90px !important;
     }
 
     .iginv {
@@ -58,7 +79,7 @@ html {
     }
 
     .titleBawah{
-        font-size: 64px;
+        font-size: 64px !important;
     }
 
     .devAlign{
