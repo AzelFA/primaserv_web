@@ -17,6 +17,28 @@ html {
     display: none;
 }
 
+.heroBg {
+    height: 50vh;
+}
+
+.devAlign{
+    text-align: center;
+}
+
+.titleBawah{
+    font-size: 54px;
+    font-weight: 600;
+    color:#DA2121;
+    text-align: center;
+}
+
+.borderRed{
+    border: 4px solid $myprimary !important;
+    margin-top: 1rem !important;
+    width: 450px !important;
+  }
+
+
 @include media-breakpoint-up(lg) {
     .heroFont {
         font-size: 90px;
@@ -25,6 +47,28 @@ html {
     .iginv {
         visibility: visible;
         display: inherit;
+    }
+
+    .heroBg {
+        height: 90%;
+    }
+
+    .about {
+        text-align: left;
+    }
+
+    .titleBawah{
+        font-size: 64px;
+    }
+
+    .devAlign{
+        text-align: initial;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .heroBg {
+        height: 100%;
     }
 }
 

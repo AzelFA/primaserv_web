@@ -17,7 +17,7 @@ function Nav(){
 
   return (
     <>
-      <MDBNavbar expand='lg' light bgColor='myprimary' className=''>
+      <MDBNavbar expand='lg' light bgColor='myprimary' className='px-lg-5 px-3'>
         <MDBContainer fluid className='p-0 mx-lg-5 mx-3'>
           <MDBNavbarToggler
             type='button'
