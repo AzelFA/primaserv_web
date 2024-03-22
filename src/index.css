@@ -10,8 +10,8 @@ body {
 /* Fonts */
 
 .title {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 700 !important;
 }
 
 .poppins-thin {

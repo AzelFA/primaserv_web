@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBCol, MDBContainer, MDBRow } from 'mdb-react-ui-kit';
+import { MDBCol, MDBRow } from 'mdb-react-ui-kit';
 import aboutPic from './about.png';
 
 function About() {
@@ -12,10 +12,10 @@ function About() {
                         marginRight: 'auto',
                         marginLeft: 'auto',
 
-                    }} className='heroBg img-fluid'></img> 
+                    }} className='heroBg img-fluid mb-0'></img> 
                 </MDBCol>
                 <MDBCol lg='6' className='align-items-center justify-content-between mx-auto px-3 px-lg-5'>
-                <h1 className='devAlign heroFont d-flex' style={{ color: '#DA2121', padding: '0px', fontSize: '76px', fontWeight:'600', marginTop:'1rem' }} >
+                <h1 className='devAlign title heroFont d-flex' style={{ color: '#DA2121', padding: '0px', fontSize: '76px', fontWeight:'600', marginTop:'1rem' }} >
                     HOME OF THE EXPERIENCE
                 </h1>
                 <p className='devAlign mt-lg-5 px-3 px-lg-0' style={{fontSize:'20px'}}>
