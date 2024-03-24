@@ -17,7 +17,7 @@ function Nav(){
 
   return (
     <>
-      <MDBNavbar expand='lg' light bgColor='myprimary' className='px-lg-5 px-3'>
+      <MDBNavbar expand='lg' light className='px-lg-5 px-3' style={{background:'#DA2121'}}>
         <MDBContainer fluid className='p-0 mx-lg-5 mx-3'>
           <MDBNavbarToggler
             type='button'
@@ -33,7 +33,7 @@ function Nav(){
           <MDBCollapse navbar open={openNavNoTogglerThird}>
             <MDBNavbarNav className='mr-auto mb-0 mb-lg-0'>
               <MDBNavbarItem>
-                <MDBNavbarLink aria-current='page' href='#' className='text-white'>
+                <MDBNavbarLink aria-current='page' href='#explore' className='text-white'>
                   Explore
                 </MDBNavbarLink>
               </MDBNavbarItem>
@@ -47,7 +47,7 @@ function Nav(){
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>
-          <MDBNavbarBrand href='#' className='ml-auto mr-auto justify-content-center'>
+          <MDBNavbarBrand href='#' className='ms-auto mr-auto justify-content-center'>
             <img
               src={Logo}
               height='50'
@@ -56,9 +56,9 @@ function Nav(){
               className='img-fluid'
             />
           </MDBNavbarBrand>
-            <MDBNavbarLink className='pr-3' href='https://instagram.com'>
+            {/* <MDBNavbarLink className='pr-3' href='https://instagram.com'>
               <MDBIcon fab icon="instagram" size='2x' color='light' />
-            </MDBNavbarLink>
+            </MDBNavbarLink> */}
         </MDBContainer>
       </MDBNavbar>
     </>

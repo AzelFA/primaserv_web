@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBBtn, MDBCol, MDBContainer, MDBIcon, MDBRow} from 'mdb-react-ui-kit'
+import { MDBBtn, MDBCol, MDBIcon, MDBRow} from 'mdb-react-ui-kit'
 import HeroBG from './hero.png'
 
 

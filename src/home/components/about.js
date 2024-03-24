@@ -14,7 +14,7 @@ function About() {
 
                     }} className='heroBg img-fluid mb-0'></img> 
                 </MDBCol>
-                <MDBCol lg='6' className='align-items-center justify-content-between mx-auto px-3 px-lg-5'>
+                <MDBCol lg='6' className='align-items-center justify-content-between mx-auto px-3 px-lg-5' id='explore'>
                 <h1 className='devAlign title heroFont d-flex' style={{ color: '#DA2121', padding: '0px', fontSize: '76px', fontWeight:'600', marginTop:'1rem' }} >
                     HOME OF THE EXPERIENCE
                 </h1>
