@@ -7,6 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.imgHover{
+  transition: transform .5s;
+}
+
+.imgHover:hover{
+  transform: scale(1.15);
+}
+
 /* Fonts */
 
 .title {
@@ -39,7 +47,7 @@ body {
 }
 
 .poppins-medium {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif; 
   font-weight: 500;
   font-style: normal;
 }

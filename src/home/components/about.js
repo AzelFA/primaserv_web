@@ -1,20 +1,19 @@
 import React from 'react';
-import { MDBCol, MDBRow } from 'mdb-react-ui-kit';
+import { MDBCol, MDBContainer, MDBRow } from 'mdb-react-ui-kit';
 import aboutPic from './about.png';
 
 function About() {
     return (
-        <div breakpoint='lg' style={{ display: 'grid', alignItems: 'center', justifyContent: 'space-between' }} className='mt-5 mb-4 pt-lg-4 px-lg-5'>
+        <MDBContainer breakpoint='lg' style={{ display: 'grid', alignItems: 'center', justifyContent: 'space-between' }} className='mt-5 mb-4 pt-lg-4 px-lg-0'>
             <MDBRow className='mx-auto'>
                 <MDBCol lg='6' className='align-items-center justify-content-between'>
                     <img src={aboutPic} alt='About.Png' style={{
                         display:'block',
-                        marginRight: 'auto',
-                        marginLeft: 'auto',
+                        margin:'0 auto',
 
-                    }} className='heroBg img-fluid mb-0'></img> 
+                    }} className='heroBg img-fluid m-auto m-lg-0'></img> 
                 </MDBCol>
-                <MDBCol lg='6' className='align-items-center justify-content-between mx-auto px-3 px-lg-5' id='explore'>
+                <MDBCol lg='6' className='align-items-center justify-content-between mx-auto px-3 px-lg-0' id='explore'>
                 <h1 className='devAlign title heroFont d-flex' style={{ color: '#DA2121', padding: '0px', fontSize: '76px', fontWeight:'600', marginTop:'1rem' }} >
                     HOME OF THE EXPERIENCE
                 </h1>
@@ -27,7 +26,7 @@ function About() {
             <div style={{ flex: '1', marginLeft: '20px' }}>
                 
             </div>
-        </div>
+        </MDBContainer>
     );
 }
 

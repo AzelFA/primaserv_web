@@ -1,155 +1,98 @@
-import React, { Component } from "react";
-import { Carousel } from "react-responsive-carousel";
-import kapal from './kapal.jpg';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import CSS for Carousel
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import { MDBIcon, MDBContainer } from 'mdb-react-ui-kit';
 
-export default class Testimonials extends Component {
-  render() {
-    return (
-      <div className="container" style={{ height: '100vh', position: 'relative' }}>
-        <h2 style={{ textAlign: 'center', color:'#DA2121', marginBottom: '90px', marginTop:'30px'}}>OUR TESTIMONY</h2>
-        <style>{`
-          .container {
-            height: 100vh;
-            position: relative;
-          }
-          .carousel-root {
-            width: 100%;
-            margin: auto;
-          }
-          .carousel .slide {
-            background: #fff;
-            color: black;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          .carousel .slide img {
-            width: 139px;
-            height: 139px;
-            border-radius: 50%;
-          }
-          .myCarousel {
-            width: 60%;
-            padding: 4%;
-          }
-          .myCarousel h3 {
-            color: #222;
-            font-weight: 600;
-            font-size: 17px;
-            margin-bottom: 8px;
-          }
-          .myCarousel h4 {
-            color: #787878;
-            font-size: 14px;
-            font-weight: 500;
-            margin-top: 0;
-          }
-          .myCarousel p {
-            color: #222;
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 1.4;
-            margin-top: 10px;
-          }
-          .carousel .control-prev.control-arrow {
-            left: 20px;
-            z-index: 2;
-          }
-          .carousel .control-next.control-arrow {
-            right: 20px;
-            z-index: 2;
-          }
-          .carousel.carousel-slider .control-arrow {
-            background: #000;
-            color: #fff;
-            font-size: 24px;
-            height: 50px;
-            width: 50px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;
-          }
-        `}</style>
+function Testimony(){
+  const data = [
+    {
+      "body": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor metus nec turpis sagittis, ac tincidunt justo consectetur.”",
+      "person": "John Doe",
+      "position": "Head of Department, ShipSail"
+    },
+    {
+      "body": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor metus nec turpis sagittis, ac tincidunt justo consectetur.”",
+      "person": "Jonathan Doe",
+      "position": "Engineer, ShipSail"
+    },
+    {
+      "body": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor metus nec turpis sagittis, ac tincidunt justo consectetur.”",
+      "person": "Barry Allen",
+      "position": "Specialist, Greenwich"
+    },
+  ];
+
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
+    },
+  };
+  
+  return(
+    <div className='p-0 mb-5' style={{background:'#EEEEEE', height: 'max-content'}}>
+      <MDBContainer>
+        <h1 className='titleBawah devAlign text-center title mt-5 pt-5'>TESTIMONIALS</h1>
+        <p className='text-center fw-bolder'>What our client says</p>
         <Carousel
-          showArrows={true}
-          infiniteLoop={true}
-          showThumbs={false}
-          showStatus={false}
-          autoPlay={true}
-          interval={6100}
-          className="testimonial mySwiper"
-          renderArrowPrev={(onClickHandler, hasPrev, label) =>
-            hasPrev && (
-              <button
-                type="button"
-                onClick={onClickHandler}
-                title={label}
-                className="control-arrow control-prev"
-              >
-                &#10094;
-              </button>
-            )
-          }
-          renderArrowNext={(onClickHandler, hasNext, label) =>
-            hasNext && (
-              <button
-                type="button"
-                onClick={onClickHandler}
-                title={label}
-                className="control-arrow control-next"
-              >
-                &#10095;
-              </button>
-            )
-          }
-        >
-          <div className="slide swiper-slide">
-            <img src={kapal} alt="kapal" className="image" />
-            <div className="myCarousel">
-              <h3>alief</h3>
-              <h4>Designer</h4>
-              <p>
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum auctor metus nec turpis sagittis, ac tincidunt justo
-                consectetur.”
-              </p>
-            </div>
-          </div>
-
-          <div className="slide swiper-slide">
-            <img src={kapal} alt="kapal" className="image" />
-            <div className="myCarousel">
-              <h3>best</h3>
-              <h4>Designer</h4>
-              <p>
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum auctor metus nec turpis sagittis, ac tincidunt justo
-                consectetur.”
-              </p>
-            </div>
-          </div>
-
-          <div className="slide swiper-slide">
-            <img src={kapal} alt="kapal" className="image" />
-            <div className="myCarousel">
-              <h3>absolute</h3>
-              <h4>Designer</h4>
-              <p>
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum auctor metus nec turpis sagittis, ac tincidunt justo
-                consectetur.”
-              </p>
-            </div>
-          </div>
-        </Carousel>
-      </div>
-    );
-  }
+        additionalTransfrom={0}
+        arrows
+        autoPlaySpeed={3000}
+        centerMode={false}
+        className=""
+        containerClass=""
+        customLeftArrow={<MDBIcon icon='circle-chevron-right' fas size='3x' className='position-absolute end-0' style={{color:'#DA2121'}}/>}
+        customRightArrow={<MDBIcon icon='circle-chevron-left' fas size='3x' className='position-absolute start-0' style={{color:'#DA2121'}}/>}
+        dotListClass=""
+        draggable="false"
+        focusOnSelect={false}
+        infinite
+        responsive={responsive}
+        itemClass=""
+        keyBoardControl="false"
+        minimumTouchDrag={80}
+        renderArrowsWhenDisabled={false}
+        renderButtonGroupOutside={false}
+        renderDotsOutside={false}
+        rewind={false}
+        rewindWithAnimation={false}
+        rtl="false"
+        shouldResetAutoplay
+        showDots={false}
+        sliderClass=""
+        slidesToSlide={1}
+      >
+      {data.map((item, i) => {
+              return (
+                <div
+                  key={i}
+                  className='m-5 px-3'
+                >
+                  <div className='text-center'>
+                  <MDBIcon icon='circle-user' fas color='black' size='7x' />
+                  </div>
+                  <h1 className='fst-italic fw-light fs-2 text-center my-4'>
+                    {item.body}
+                  </h1>
+                  <p className='text-center fst-italic fs-5 m-0'>{item.person}</p>
+                  <p className='text-center fst-italic fs-5 m-0'>{item.position}</p>
+                </div>
+              );
+            })}
+      </Carousel>
+      </MDBContainer>
+    </div>
+  );
 }
+
+export default Testimony;

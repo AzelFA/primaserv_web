@@ -1,6 +1,7 @@
 nav {
     background-color: #DA2121;
     height: 95px;
+    position: fixed;
 }
 
 

@@ -17,7 +17,7 @@ function Nav(){
 
   return (
     <>
-      <MDBNavbar expand='lg' light className='px-lg-5 px-3' style={{background:'#DA2121'}}>
+      <MDBNavbar expand='lg' light sticky className='px-lg-5 px-3' style={{background:'#DA2121'}}>
         <MDBContainer fluid className='p-0 mx-lg-5 mx-3'>
           <MDBNavbarToggler
             type='button'
@@ -33,15 +33,15 @@ function Nav(){
           <MDBCollapse navbar open={openNavNoTogglerThird}>
             <MDBNavbarNav className='mr-auto mb-0 mb-lg-0'>
               <MDBNavbarItem>
-                <MDBNavbarLink aria-current='page' href='#explore' className='text-white'>
+                <MDBNavbarLink aria-current='page' href='/#explore' className='text-white'>
                   Explore
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#projects' className='text-white'>Projects</MDBNavbarLink>
+                <MDBNavbarLink href='/#projects' className='text-white'>Projects</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#contact' className='text-white'>
+                <MDBNavbarLink href='/#contact' className='text-white'>
                   Contact
                 </MDBNavbarLink>
               </MDBNavbarItem>

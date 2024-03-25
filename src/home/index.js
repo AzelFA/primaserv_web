@@ -1,5 +1,3 @@
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
 import HomePage from './components/homepage';
 import About from './components/about';
 import Visions from './components/visions';
@@ -12,7 +10,6 @@ import ContactForm from './components/conform';
 function Home() {
     return(
         <>
-            <Nav />
             <HomePage />
             <About />
             <Visions />
@@ -21,7 +18,6 @@ function Home() {
             <Competencies />
             <Testimony />
             <ContactForm />
-            <Footer />
         </>
     );
 }

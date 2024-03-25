@@ -1,7 +1,12 @@
+import { Link } from 'react-router-dom';
+
 function Projects(){
     return(
+        
         <section>
-            <h1>hello world</h1>
+            <section>
+                <h1>hello world</h1>
+            </section>
         </section>
     );
 }

@@ -11,13 +11,13 @@ function Footer(){
         </div>
 
         <div>
-          <a href='https://instagram.com' className='me-auto me-lg-5 pe-lg-5 text-reset'>
+          <a href='https://www.instagram.com/primaservitama_official/' target="_blank" rel="noreferrer noopener" className='me-auto me-lg-5 pe-lg-5 text-reset'>
             <MDBIcon color='light' fab icon='instagram' size='2x' />
           </a>
         </div>
       </section>
 
-      <section className='px-lg-5'>
+      <section className='px-lg-5 me-lg-5'>
         <div className='text-center text-md-start mt-5'>
           <MDBRow className='mt-3'>
             <MDBCol md='3' lg='4' xl='3' className='mx-auto mb-4'>
@@ -39,7 +39,7 @@ function Footer(){
               </p>
               <p>
                 <a href='/projects' className='text-reset'>
-                  Projects
+                  Projects List
                 </a>
               </p>
               <p>
@@ -78,7 +78,7 @@ function Footer(){
               </p>
             </MDBCol>
 
-            <MDBCol md='4' lg='3' xl='3' className='mx-auto mb-md-0 mb-4'>
+            <MDBCol md='4' lg='3' xl='3' className='mx-auto mb-md-0 mb-4' >
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p>
                 <MDBIcon color='secondary' icon='home' className='me-2' />

@@ -40,7 +40,7 @@ html {
 .borderRed{
     border: 5px solid $myprimary !important;
     margin-top: 1rem !important;
-    width: 450px !important;
+    width: 450px;
     height: max-content;
   }
 
@@ -55,17 +55,18 @@ html {
 
 @include media-breakpoint-up(lg) {
     .borderRed{
-        height: 505px;
+        height: 450px;
+        width: 420px !important;
       }
     
     .boxWidth{
-        width: 25vw !important;
-        margin: 5rem;
+        width: 23vw !important;
+        margin: 2rem;
     }
     
 
       .devText{
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .heroFont {
